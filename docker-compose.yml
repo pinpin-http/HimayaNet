@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=development
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+
+  proxy:
+    build: ./proxy
+    ports:
+      - "3128:3128"
+    volumes:
+      - ./proxy/config:/etc/squid
+      - ./proxy/blacklists:/etc/squid/blacklists

@@ -1,0 +1,574 @@
+juil. 03 19:57:01 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.403638162+02:00" level=info msg="Starting up"
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.437350930+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.437404022+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.442825031+02:00" level=info msg="Loading containers: start."
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.451948829+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:57:01 soheib-linux dockerd[59509]: time="2024-07-03T19:57:01.466615017+02:00" level=info msg="Firewalld: created docker-forwarding policy"
+juil. 03 19:57:02 soheib-linux dockerd[59509]: time="2024-07-03T19:57:02.070118192+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:57:02 soheib-linux dockerd[59509]: time="2024-07-03T19:57:02.071799746+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:57:02 soheib-linux dockerd[59509]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:57:02 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:57:02 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:57:02 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:57:04 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:57:04 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.321701974+02:00" level=info msg="Starting up"
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.339317692+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.339343603+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.339451444+02:00" level=info msg="Loading containers: start."
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.340576585+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.342511384+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.978976937+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:57:04 soheib-linux dockerd[59712]: time="2024-07-03T19:57:04.980898055+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:57:04 soheib-linux dockerd[59712]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:57:04 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:57:04 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:57:05 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:57:06 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:57:06 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.038479594+02:00" level=info msg="Starting up"
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.055362423+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.055387126+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.055494793+02:00" level=info msg="Loading containers: start."
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.056523805+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.058368185+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.685707765+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:57:07 soheib-linux dockerd[59818]: time="2024-07-03T19:57:07.687315735+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:57:07 soheib-linux dockerd[59818]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:57:07 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:57:07 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:57:07 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:57:09 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:57:09 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+juil. 03 19:57:09 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:57:09 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:57:53 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+juil. 03 19:57:53 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:57:53 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:58:47 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.725326847+02:00" level=info msg="Starting up"
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.742755489+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.742780163+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.742900861+02:00" level=info msg="Loading containers: start."
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.743967587+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:58:47 soheib-linux dockerd[60748]: time="2024-07-03T19:58:47.746531243+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:58:48 soheib-linux dockerd[60748]: time="2024-07-03T19:58:48.270819398+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:58:48 soheib-linux dockerd[60748]: time="2024-07-03T19:58:48.271248985+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:58:48 soheib-linux dockerd[60748]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:58:48 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:58:48 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:58:48 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:58:50 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:58:50 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.577516296+02:00" level=info msg="Starting up"
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.596365028+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.596389871+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.596500425+02:00" level=info msg="Loading containers: start."
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.597531518+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:58:50 soheib-linux dockerd[60879]: time="2024-07-03T19:58:50.599477515+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:58:51 soheib-linux dockerd[60879]: time="2024-07-03T19:58:51.372618113+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:58:51 soheib-linux dockerd[60879]: time="2024-07-03T19:58:51.373024413+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:58:51 soheib-linux dockerd[60879]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:58:51 soheib-linux dockerd[60879]: time="2024-07-03T19:58:51.373192045+02:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+juil. 03 19:58:51 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:58:51 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:58:51 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:58:53 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:58:53 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.540547088+02:00" level=info msg="Starting up"
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.764301183+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.764400603+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.764856819+02:00" level=info msg="Loading containers: start."
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.769711283+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:58:53 soheib-linux dockerd[60982]: time="2024-07-03T19:58:53.777594198+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:58:54 soheib-linux dockerd[60982]: time="2024-07-03T19:58:54.492550604+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:58:54 soheib-linux dockerd[60982]: time="2024-07-03T19:58:54.494745148+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:58:54 soheib-linux dockerd[60982]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:58:54 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:58:54 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:58:54 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:58:56 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:58:56 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+juil. 03 19:58:56 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:58:56 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:59:26 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:59:26 soheib-linux dockerd[61660]: time="2024-07-03T19:59:26.562105506+02:00" level=info msg="Starting up"
+juil. 03 19:59:27 soheib-linux dockerd[61660]: time="2024-07-03T19:59:27.555827713+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:59:27 soheib-linux dockerd[61660]: time="2024-07-03T19:59:27.555935294+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:59:27 soheib-linux dockerd[61660]: time="2024-07-03T19:59:27.556403826+02:00" level=info msg="Loading containers: start."
+juil. 03 19:59:27 soheib-linux dockerd[61660]: time="2024-07-03T19:59:27.770201443+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:59:27 soheib-linux dockerd[61660]: time="2024-07-03T19:59:27.773180019+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:59:29 soheib-linux dockerd[61660]: time="2024-07-03T19:59:29.139990520+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:59:29 soheib-linux dockerd[61660]: time="2024-07-03T19:59:29.142103526+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:59:29 soheib-linux dockerd[61660]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:59:29 soheib-linux dockerd[61660]: time="2024-07-03T19:59:29.142863337+02:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+juil. 03 19:59:29 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:59:29 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:59:29 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:59:31 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:59:31 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.298420553+02:00" level=info msg="Starting up"
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.320569168+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.320596001+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.320713091+02:00" level=info msg="Loading containers: start."
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.321812650+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:59:31 soheib-linux dockerd[61811]: time="2024-07-03T19:59:31.323621346+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:59:32 soheib-linux dockerd[61811]: time="2024-07-03T19:59:32.129492477+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:59:32 soheib-linux dockerd[61811]: time="2024-07-03T19:59:32.129979853+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:59:32 soheib-linux dockerd[61811]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:59:32 soheib-linux dockerd[61811]: time="2024-07-03T19:59:32.130158472+02:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+juil. 03 19:59:32 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:59:32 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:59:32 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:59:34 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:59:34 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.328815671+02:00" level=info msg="Starting up"
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.348343711+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.348371940+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.348486222+02:00" level=info msg="Loading containers: start."
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.349543773+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 19:59:34 soheib-linux dockerd[61912]: time="2024-07-03T19:59:34.351585210+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 19:59:35 soheib-linux dockerd[61912]: time="2024-07-03T19:59:35.130943849+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 19:59:35 soheib-linux dockerd[61912]: time="2024-07-03T19:59:35.131316527+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 19:59:35 soheib-linux dockerd[61912]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 19:59:35 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 19:59:35 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:59:35 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 19:59:37 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 19:59:37 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+juil. 03 19:59:37 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 19:59:37 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 20:02:47 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.835692543+02:00" level=info msg="Starting up"
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.865725490+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.865750045+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.865857597+02:00" level=info msg="Loading containers: start."
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.866964851+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 20:02:47 soheib-linux dockerd[62825]: time="2024-07-03T20:02:47.868958196+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 20:02:48 soheib-linux dockerd[62825]: time="2024-07-03T20:02:48.567285661+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 20:02:48 soheib-linux dockerd[62825]: time="2024-07-03T20:02:48.567777342+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 20:02:48 soheib-linux dockerd[62825]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 20:02:48 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 20:02:48 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 20:02:48 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 20:02:50 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 20:02:50 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.788664045+02:00" level=info msg="Starting up"
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.808126467+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.808150748+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.808258084+02:00" level=info msg="Loading containers: start."
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.809296836+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 20:02:50 soheib-linux dockerd[62958]: time="2024-07-03T20:02:50.811369308+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 20:02:51 soheib-linux dockerd[62958]: time="2024-07-03T20:02:51.545792010+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 20:02:51 soheib-linux dockerd[62958]: time="2024-07-03T20:02:51.547720361+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 20:02:51 soheib-linux dockerd[62958]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 20:02:51 soheib-linux dockerd[62958]: time="2024-07-03T20:02:51.548009334+02:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+juil. 03 20:02:51 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 20:02:51 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 20:02:51 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 20:02:53 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 20:02:53 soheib-linux systemd[1]: Starting Docker Application Container Engine...
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a commencé à démarrer[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a commencé à démarrer.[0m
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.801621779+02:00" level=info msg="Starting up"
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.819294129+02:00" level=error msg="failed to mount overlay: no such device" storage-driver=overlay2
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.819318023+02:00" level=error msg="exec: \"fuse-overlayfs\": executable file not found in $PATH" storage-driver=fuse-overlayfs
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.819438268+02:00" level=info msg="Loading containers: start."
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.820501266+02:00" level=warning msg="Running modprobe bridge br_netfilter failed with message: modprobe: WARNING: Module bridge not found in directory /lib/modules/6.6.35-2-lts\nmodprobe: WARNING: Module br_netfilter not found in directory /lib/modules/6.6.35-2-lts\n, error: exit status 1"
+juil. 03 20:02:53 soheib-linux dockerd[63062]: time="2024-07-03T20:02:53.822427330+02:00" level=info msg="Firewalld: docker zone already exists, returning"
+juil. 03 20:02:54 soheib-linux dockerd[63062]: time="2024-07-03T20:02:54.517328903+02:00" level=error msg="Failed to create bridge docker0 via netlink" error="operation not supported"
+juil. 03 20:02:54 soheib-linux dockerd[63062]: time="2024-07-03T20:02:54.517784642+02:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+juil. 03 20:02:54 soheib-linux dockerd[63062]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: operation not supported
+juil. 03 20:02:54 soheib-linux dockerd[63062]: time="2024-07-03T20:02:54.517968650+02:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+juil. 03 20:02:54 soheib-linux systemd[1]: [0;1;39m[0;1;31m[0;1;39mdocker.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit docker.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+juil. 03 20:02:54 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 20:02:54 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
+juil. 03 20:02:56 soheib-linux systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Le redémarrage automatique d'une unité (unit) a été planifié[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mLe redémarrage automatique de l'unité (unit) docker.service a été planifié, en[0m
+[0;38;5;245m░░[0m [0;32mraison de sa configuration avec le paramètre Restart=.[0m
+juil. 03 20:02:56 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Start request repeated too quickly.[0m
+juil. 03 20:02:56 soheib-linux systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mdocker.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit docker.service has entered the 'failed' state with result 'exit-code'.[0m
+juil. 03 20:02:56 soheib-linux systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Docker Application Container Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: L'unité (unit) docker.service a échoué[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: https://lists.freedesktop.org/mailman/listinfo/systemd-devel[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mL'unité (unit) docker.service a échoué, avec le résultat failed.[0m
