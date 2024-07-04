@@ -1,0 +1,40 @@
+# Ignorer les répertoires de dépendances
+node_modules/
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de configuration spécifiques à l'IDE
+.vscode/
+.idea/
+
+# Ignorer les fichiers Python bytecode
+__pycache__/
+*.pyc
+
+# Ignorer les fichiers de configuration de l'environnement
+.env
+
+# Ignorer les fichiers de build
+build/
+dist/
+
+# Ignorer les fichiers temporaires
+*.swp
+
+# Ignorer les répertoires Docker
+docker-compose.override.yml
+
+# Ignorer les dossiers spécifiques au projet
+proxy/blacklists/
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de sortie npm
+npm-debug.log
+yarn-error.log
+
+# Ignorer les fichiers de dépendances Python
+venv/
