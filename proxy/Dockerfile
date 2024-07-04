@@ -1,4 +1,4 @@
-# Utiliser l'image de base Ubuntu
+# Utiliser une image de base Ubuntu
 FROM ubuntu:20.04
 
 # Installer Squid
