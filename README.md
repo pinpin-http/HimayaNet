@@ -4,7 +4,7 @@ Ce projet de contrôle parental utilise un proxy Squid pour filtrer les contenus
 
 ## Structure du Projet
 ```sh
-projet-controle-parental/
+HimayaNet/
 ├── backend/             # Code pour le backend Flask
 ├── frontend/            # Code pour le dashboard web des parents
 ├── windows-app/         # Code pour l'application Windows
@@ -22,8 +22,8 @@ projet-controle-parental/
 1. Clonez le dépôt :
 
    ```sh
-   https://github.com/pinpin-http/SecretProject.git
-   cd SecretProject 
+   https://github.com/pinpin-http/HimayaNet.git
+   cd HimayaNet 
    ```
 
  2. Assurez-vous que Docker et Docker Compose sont installés sur votre machine.
