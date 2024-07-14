@@ -28,17 +28,32 @@ jobs:
           push: false
           tags: user/app:latest
 
+      - name: Set up Docker Compose
+        run: sudo apt-get update && sudo apt-get install -y docker-compose
+
+      - name: Build Docker images
+        run: docker-compose build
+
       - name: Run backend tests
         run: |
           docker-compose up -d backend
-          docker exec backend pytest
+          sleep 10  # Attendre que le backend soit prêt
+          docker-compose exec backend pytest
+        env:
+          CI: true
 
       - name: Run frontend tests
         run: |
           docker-compose up -d frontend
-          docker exec frontend npm test
+          sleep 10  # Attendre que le frontend soit prêt
+          docker-compose exec frontend npm test
+        env:
+          CI: true
 
       - name: Run proxy tests
         run: |
           docker-compose up -d proxy
+          sleep 10  # Attendre que le proxy soit prêt
           # Ajouter les tests spécifiques pour le proxy ici
+        env:
+          CI: true
