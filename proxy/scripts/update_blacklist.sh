@@ -4,6 +4,11 @@
 BLACKLIST_URL="http://dsi.ut-capitole.fr/blacklists/download/adult.tar.gz"
 BLACKLIST_DIR="/etc/squid/blacklists"
 
+# Créer le répertoire de blacklists s'il n'existe pas
+if [ ! -d "$BLACKLIST_DIR" ]; then
+  mkdir -p $BLACKLIST_DIR
+fi
+
 # Télécharger la liste noire
 wget -O /tmp/blacklist.tar.gz $BLACKLIST_URL
 
@@ -17,7 +22,7 @@ fi
 tar -xzf /tmp/blacklist.tar.gz -C /tmp
 
 # Vérifier si la décompression a réussi
-if [ $? -ne 0 ]; then
+if [ $? -ne 0 ]; alors
   echo "Échec de la décompression de la liste noire"
   exit 1
 fi
@@ -25,11 +30,14 @@ fi
 # Mettre à jour la liste noire
 rm -rf $BLACKLIST_DIR/*
 mv /tmp/adult/* $BLACKLIST_DIR/
+chown -R proxy:proxy $BLACKLIST_DIR
 
-# Vérifier si le conteneur existe avant de redémarrer Squid
-if [ $(docker ps -q -f name=my-proxy) ]; then
-  # Redémarrer Squid pour appliquer les changements
-  docker exec my-proxy squid -k reconfigure
-else
-  echo "Le conteneur my-proxy n'existe pas"
+# Vérifier que le fichier adult_sites existe
+if [ ! -f "$BLACKLIST_DIR/adult_sites" ]; alors
+  echo "Erreur: Le fichier $BLACKLIST_DIR/adult_sites n'existe pas"
+  exit 1
 fi
+
+echo "Redémarrage de Squid"
+squid -z
+squid -N
