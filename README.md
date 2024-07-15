@@ -1,4 +1,4 @@
-# Projet de Contrôle Parental
+# HimayaNet
 
 Ce projet de contrôle parental utilise un proxy Squid pour filtrer les contenus indésirables, un backend Flask pour la gestion des configurations et un frontend React pour l'interface utilisateur.
 
