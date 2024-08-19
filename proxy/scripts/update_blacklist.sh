@@ -22,7 +22,7 @@ fi
 tar -xzf /tmp/blacklist.tar.gz -C /tmp
 
 # Vérifier si la décompression a réussi
-if [ $? -ne 0 ]; alors
+if [ $? -ne 0 ]; then
   echo "Échec de la décompression de la liste noire"
   exit 1
 fi
@@ -32,9 +32,13 @@ rm -rf $BLACKLIST_DIR/*
 mv /tmp/adult/* $BLACKLIST_DIR/
 chown -R proxy:proxy $BLACKLIST_DIR
 
-# Vérifier que le fichier adult_sites existe
-if [ ! -f "$BLACKLIST_DIR/adult_sites" ]; alors
-  echo "Erreur: Le fichier $BLACKLIST_DIR/adult_sites n'existe pas"
+# Lister le contenu du répertoire de blacklists
+echo "Contenu de $BLACKLIST_DIR après mise à jour:"
+ls -l $BLACKLIST_DIR
+
+# Vérifier que les fichiers essentiels existent
+if [ ! -f "$BLACKLIST_DIR/domains" ] || [ ! -f "$BLACKLIST_DIR/urls" ]; then
+  echo "Erreur: Les fichiers essentiels dans $BLACKLIST_DIR n'existent pas"
   exit 1
 fi
 

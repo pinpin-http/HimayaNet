@@ -8,17 +8,20 @@ services:
     volumes:
       - ./proxy/config:/etc/squid
       - ./proxy/blacklists:/etc/squid/blacklists
-
+      - ./proxy/logs:/var/log/squid  
+    restart: always  
+    command: ["bash", "-c", "tail -f /dev/null"]  
+    
   backend:
     build: ./backend
     ports:
-      - "5000:5000"  # Port interne 5000 mappé au port externe 5000
+      - "5000:5000"
     volumes:
       - ./backend:/app
 
   frontend:
     build: ./frontend
     ports:
-      - "3000:5000"  # Port interne 5000 mappé au port externe 3000
+      - "3000:5000"
     volumes:
       - ./frontend:/app
