@@ -9,7 +9,7 @@ HimayaNet/
 ├── frontend/            # Code pour le dashboard web des parents
 ├── windows-app/         # Code pour l'application Windows
 ├── android-app/         # Code pour l'application Android
-└── proxy/               # Configuration et scripts pour le proxy Squid
+└── proxy/               # Configuration  et scripts pour le proxy Squid
 ```
 
 ## Prérequis
