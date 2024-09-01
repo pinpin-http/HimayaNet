@@ -1,3 +1,0 @@
-# SecretProject
-
-Vue client
