@@ -3,7 +3,7 @@ import googleapiclient.discovery
 import json
 
 # Configuration API YouTube
-API_KEY = 'AIzaSyClJqP-nA20mrhFuSlJKB5O5KUypHWDWsM'
+API_KEY = ''
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
