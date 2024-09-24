@@ -85,7 +85,7 @@ def check_google_cloud_sdk():
             print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud installé avec succès.{bcolors.ENDC}")
         else:
             print(f"{ERROR_EMOJI} {bcolors.FAIL}Installation automatique du SDK Google Cloud non prise en charge pour ce système. Installez-le manuellement.{bcolors.ENDC}")
-            sys.exit(1)
+            sys.exit(1)a
     
     print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud est installé et prêt à l'emploi.{bcolors.ENDC}")
 
