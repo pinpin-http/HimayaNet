@@ -75,19 +75,28 @@ def run_command(command):
 
 def check_google_cloud_sdk():
     """Vérifie si le SDK Google Cloud est installé. Si non, l'installe automatiquement."""
-    sdk_installed = run_command("gcloud --version")
-    if "Google Cloud SDK" not in sdk_installed:
+    try:
+        sdk_installed = run_command("gcloud --version")
+        if "Google Cloud SDK" not in sdk_installed:
+            raise FileNotFoundError
+
+        print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud est installé et prêt à l'emploi.{bcolors.ENDC}")
+    except FileNotFoundError:
         print(f"{WARNING_EMOJI} {bcolors.WARNING}Le SDK Google Cloud n'est pas installé. Installation en cours...{bcolors.ENDC}")
+        
         if sys.platform.startswith("linux"):
-            run_command("curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-409.0.0-linux-x86_64.tar.gz")
-            run_command("tar -xf google-cloud-sdk-409.0.0-linux-x86_64.tar.gz")
-            run_command("./google-cloud-sdk/install.sh")
-            print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud installé avec succès.{bcolors.ENDC}")
+            try:
+                run_command("curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-409.0.0-linux-x86_64.tar.gz")
+                run_command("tar -xf google-cloud-sdk-409.0.0-linux-x86_64.tar.gz")
+                run_command("./google-cloud-sdk/install.sh")
+                print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud installé avec succès.{bcolors.ENDC}")
+            except Exception as e:
+                print(f"{ERROR_EMOJI} {bcolors.FAIL}Erreur lors de l'installation du SDK Google Cloud: {e}{bcolors.ENDC}")
+                sys.exit(1)
         else:
             print(f"{ERROR_EMOJI} {bcolors.FAIL}Installation automatique du SDK Google Cloud non prise en charge pour ce système. Installez-le manuellement.{bcolors.ENDC}")
-            sys.exit(1)a
-    
-    print(f"{SUCCESS_EMOJI} {bcolors.OKGREEN}SDK Google Cloud est installé et prêt à l'emploi.{bcolors.ENDC}")
+            sys.exit(1)
+
 
 def initialize_gcloud_sdk():
     """Initialise le SDK Google Cloud en mode non interactif"""
