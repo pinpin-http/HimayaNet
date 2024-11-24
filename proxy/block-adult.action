@@ -1,0 +1,9 @@
+# Bloquer les domaines pour adultes et YouTube
+{ +block{Adult Content} }
+.youtube.com
+.pornhub.com
+.redtube.com
+.xxx
+.sex
+.erotic
+

@@ -1,0 +1,4 @@
+# Filtrer les contenus pour adultes
+FILTER: block-adult-words Block adult-related words
+s/(porn|xxx|sex|adult|erotic)/BLOCKED/
+
