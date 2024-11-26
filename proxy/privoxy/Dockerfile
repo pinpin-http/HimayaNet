@@ -11,7 +11,7 @@ COPY block-adult.filter /etc/privoxy/block-adult.filter
 
 # Ajouter le fichier de modèle personnalisé
 RUN mkdir -p /usr/share/privoxy/templates
-COPY blocked.html /usr/share/privoxy/templates/blocked
+COPY templates /usr/share/privoxy/templates
 
 # Exposer le port par défaut de Privoxy
 EXPOSE 8118

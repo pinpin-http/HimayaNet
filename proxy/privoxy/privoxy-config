@@ -1,0 +1,24 @@
+# Activer Privoxy sur le port 8118
+listen-address  0.0.0.0:8118
+
+templdir /usr/share/privoxy/templates
+
+
+# Activer les logs
+logdir /var/log/privoxy
+logfile logfile
+debug   1  # Activer les logs pour le débogage
+
+# Répertoires de configuration et de modèles
+confdir /etc/privoxy
+deny-access-block-page /usr/share/privoxy/templates/blocked.html
+
+
+
+# Configurer les filtres et actions
+filterfile /etc/privoxy/block-adult.filter
+actionsfile /etc/privoxy/block-adult.action
+
+# Autoriser toutes les connexions (par défaut)
+permit-access 0.0.0.0/0
+
